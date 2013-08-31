@@ -1,0 +1,654 @@
+@charset "utf-8";
+/* Mídia fluida simples
+   Nota: a mídia fluida exige a remoção dos seus atributos de comprimento e largura do HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* O IE 6 não oferece suporte a largura máxima; por isso, o padrão de largura deve ser 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propriedades de mídia fluida do Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiração do "Design da Web responsivo", por Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	e Sistema de grade dourada, por Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Layout para celulares: menor ou igual a 480 px. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 0.82%;
+	padding-right: 0.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cabecalho {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#interview {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#artwork {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#rodape {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+/*INICO MINHAS MUDANÇAS*/
+h3{	
+	font-size: 15px;
+	float:left;
+	margin-top:15px;
+	line-height:25px;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #A1BBD4;
+	font-weight:200;
+	/*border:2px solid #408080; visualizar a DIV*/ 
+}
+a:link {text-decoration: none;color: #A1BBD4}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;color: #A1BBD4}
+a:hover {text-decoration: underline;color: #A1BBD4}
+
+.quadro-interno-azul {
+	clear:left;
+	height:800px;
+	width:370px;
+	float:left;
+	border:15px solid #5C7D9E;
+	background-color:#FFF; 
+}
+
+.quadro-interno-azul-clientes {
+	clear:left;
+	height:550px;
+	width:370px;
+	float:left;
+	border:15px solid #5C7D9E;
+	background-color:#FFF; 
+}
+
+.quadro-interno-azul-shadowbox {
+	clear:left;
+	height:400px;
+	width:370px;
+	float:left;
+	border:15px solid #5C7D9E;
+	background-color:#FFF; 
+}
+
+#quadro-servicos {
+	height: 615px;
+	width: 200px;
+	float:left;
+	margin-left:-40px;
+	/*border: #FF0 solid 2px;visualizar a DIV AMARELO*/
+}
+
+#quadro-texto-servicos {
+	padding-top:25px;
+	margin-left:-20px;
+	height: 600px;
+	width: 225px;
+	float:left;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+#texto-servico-interno{
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	font-size:10px;
+	text-align:justify;
+	margin-left:-40px;
+	/*border:1px solid #909;visualizar a DIV ROXO*/
+}
+
+.barra-inferior {
+	height:50px;
+	width:370px;
+	float:left;
+	position:absolute; top:810px; left:10;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+.barra-inferior-orcamento {
+	height:50px;
+	width:370px;
+	float:left;
+	position:absolute; top:365px; left:10;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+.barra-inferior-clientes {
+	height:100px;
+	width:400px;
+	float:left;
+	position:absolute; top:590px; left:10;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+.titulo-interno{
+	margin-left:210px;
+	margin-top:-50px;
+	margin-bottom:20px;
+	font-size: 7px;
+	color:#FFF;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+.titulo-interno-orcamento{
+	margin-left:180px;
+	margin-top:-60px;
+	margin-bottom:40px;
+	font-size: 7px;
+	color:#FFF;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+.titulo-interno-menor{
+	margin-left:210px;
+	margin-top:-50px;
+	margin-bottom:20px;
+	font-size: 7px;
+	color:#FFF;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	
+}
+
+#texto-web{
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-align:justify;
+	font-size:12px;
+	/*border:1px solid #909;visualizar a DIV ROXO*/
+}
+
+#texto-web-paginas{
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-align:justify;
+	font-size:12px;
+	height:350px;
+	overflow:auto;
+	/*border:1px solid #909;visualizar a DIV ROXO*/
+}
+
+#texto-web-menor{
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-align:justify;
+	font-size:10px;
+	/*border:1px solid #909;visualizar a DIV ROXO*/
+}
+
+#qualidade-quadro{
+	height:410px;
+	width:370px;
+	float:left;
+	border:15px solid #5C7D9E;
+	background-color:#FFF; 
+}
+
+#web-quadro{
+	height:98px;
+	width:65px;
+	float:left;
+	padding-left:inherit;
+	/*border:1px solid #000;visualizar a DIV PRETO*/
+}
+
+#web-quadro-texto{
+	padding-top:1px;
+	height:50px;
+	width:200px;
+	float:left;
+	/*border:1px solid #000;visualizar a DIV PRETO*/
+}
+
+.texto-quadro{
+	font-size: 12px;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #333;
+	font-weight:200;
+	float:right;
+	text-align:justify;
+	width:300px;
+	height:80px;
+	margin-top:-30px;
+	padding-right:5px;
+	/*border:1px solid #000;visualizar a DIV PRETO*/ 
+}
+
+.quadros-rodape {
+	height: 120px;
+	width: 400px;
+	background-color:#5C7D9E;
+	/*border: #FFF solid 2px;visualizar a DIV BRANCO*/
+}
+
+#separador-xis-rodape{
+	background-image:url(../img/Xis-separador-rodape.png); background-repeat:no-repeat;
+	height:130px;
+	width:10px;
+	float:left;
+	/*border:1px solid #F00;visualizar a DIV  VERMELHA*/ 
+}
+
+#logo-xis-rodape{
+	background-image:url(../img/Xis-logo-rodape.png); background-repeat:no-repeat;
+	height:120px;
+	width:110px;
+	float:left;
+}
+
+#menu-rodape{
+	font-size: 15px;
+	float:left;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #A1BBD4;
+	font-weight:200;
+	padding-top:5px;
+	/*border:1px solid #F00;visualizar a DIV  VERMELHA*/ 
+}
+
+#redes-sociais{
+	background-image:url(../img/Xis-redes-rodape.png); background-repeat:no-repeat;
+	height:120px;
+	width:206px;
+	float:left;
+	/*border:1px solid #FFF;visualizar a DIV BRANCO*/ 
+}
+
+#redes-sociais-icones{
+	float:left;
+	margin-top:-100px;
+	margin-left:123px;
+}
+
+/* RODAPE CLIENTES INICIO*/
+
+.quadros-rodape-paginas {
+	clear:left;
+	height: 140px;
+	width: 400px;
+	float:left;
+	background-color:#5C7D9E;
+	/*border: #FFF solid 2px;visualizar a DIV BRANCO*/
+}
+
+#separador-xis-rodape-paginas{
+	background-image:url(../img/Xis-separador-rodape.png); background-repeat:no-repeat;
+	height:135px;
+	width:10px;
+	float:left;
+	margin-top:10px;
+	/*border:1px solid #F00;visualizar a DIV  VERMELHA*/ 
+}
+
+#logo-xis-rodape-paginas{
+	background-image:url(../img/Xis-logo-rodape.png); background-repeat:no-repeat;
+	height:120px;
+	width:110px;
+	float:left;
+}
+
+#menu-rodape-paginas{
+	padding-top:30px;
+	font-size: 14px;
+	float:left;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #A1BBD4;
+	font-weight:200;
+}
+
+#redes-sociais-paginas{
+	background-image:url(../img/Xis-redes-rodape.png); background-repeat:no-repeat;
+	height:120px;
+	width:206px;
+	float:left;
+	/*border:1px solid #FFF;visualizar a DIV BRANCO*/ 
+}
+
+#redes-sociais-icones-paginas{
+	float:left;
+	margin-top:-95px;
+	margin-left:145px;
+}
+
+#copy-paginas{
+	font-size: 12px;
+	float:left;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #A1BBD4;
+	font-weight:200;
+	background-color:#5C7D9E;
+	width:400px;
+	height:40px;
+	padding-top:5px;
+}
+
+/* FIM*/
+
+
+#copy{
+	font-size: 12px;
+	float:left;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    color: #A1BBD4;
+	font-weight:200;
+	background-color:#5C7D9E;
+	width:400px;
+	height:40px;
+	padding-top:5px;
+}
+
+#contato {
+	margin-left:5px;
+	margin-top:25px;
+	height: 225px;
+	width: 360px;
+	float:left;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+
+#texto-contato{
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	padding-left:20px;
+	font-size:15px;
+	text-align:justify;
+	margin-top:10px;
+	line-height:20px;
+	float:left;
+	/*border:1px solid #909;visualizar a DIV ROXO*/
+}
+
+#campo {
+	font-size:10px;
+    background: #FFF;
+    border: solid 1px;
+    border-color: #5C7D9E;
+    border-radius: 0.2em;
+    color: #5C7D9E;
+    font-family: Verdana, Geneva, sans-serif;
+	/*TABELA*/ 
+}
+
+#botao{
+    background: #5C7D9E;
+    color: #FFF;
+    font-weight: 200;
+    font-size: 15px;
+    border: none;
+    border-radius: 0.2em;
+	height:30px;
+	width:110px;
+	margin-right:18px;
+	margin-top:5px;
+}
+
+#mapa {
+	margin-top:5px;
+	margin-left:5px;
+	height: 325px;
+	width: 360px;
+	float:left;
+	/*border: #000 solid 2px;visualizar a DIV PRETO*/
+}
+
+#carosel-quadro {
+	margin: auto;
+	padding-top:30px;
+	padding-left:25px;
+	height: 150px;
+	width: 345px;
+	position: relative;
+	/*border: #000 solid 1px;visualizar a DIV PRETO*/
+}
+
+.jqueryslidemenu{
+font: bold 12px Verdana;
+background: #414141;
+width: auto;
+}
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+width:90px;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+background: #414141; /*background of tabs (default state)*/
+color: white;
+padding: 10px 10px;
+border-right: 1px solid #778;
+color: #2d2b2b;
+text-decoration: none;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+color: white;
+}
+
+.jqueryslidemenu ul li a:hover{
+background: black; /*tab link background during hover state*/
+color: white;
+}
+
+
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+font: normal 13px Verdana;
+width: 149px; /*width of sub menus*/
+padding: 5px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid gray;
+}
+
+.jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
+background: #eff9ff;
+color: black;
+}
+
+/* ######### CSS classes applied to down and right arrow images ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+/*FIM*/
+/* Layout para tablets: 481 px a 768 px. Herda estilos de: Layout para celulares. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cabecalho {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#interview {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#artwork {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#rodape {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Layout para desktops: 769 px até o máximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#cabecalho {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#article {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 49.1525%;
+	display: block;
+}
+#interview {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 49.1525%;
+	display: block;
+}
+#artwork {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 100%;
+	display: block;
+}
+#rodape {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.cabecalho {
+	margin: auto;
+	padding: 0px;
+	height: 75px;
+	width: 1002px;
+	position: relative;
+	/*border: #FFF solid 0px;*/
+}
+.paginas {
+	margin: auto;
+	padding: 0px;
+	height: 560px;
+	width: 1002px;
+	position: relative;
+	/*border: #FFF solid 0px;*/
+}
+
+.rodape {
+	margin: auto;
+	padding: 0px;
+	height: 60px;
+	width: 1002px;
+	position: relative;
+	/*border: #FFF solid 0px;*/
+}
+
+#conteudo{
+    margin: 0em auto;  	
+    width: 1002px;
+    height:auto;
+    border-left: #CCC 0px solid;
+    border-right: #CCC 0px solid;
+    box-shadow: 0px 0px 10px 2px #CCC;
+}    
